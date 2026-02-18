@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.block {
+    max-width: 400px;
+    border: 1px solid #aaa;
+}
+
+.date {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.date fieldset {
+    display: flex;
+    align-items: center;
+}
+
+.controller {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 1rem;
+    background-color: #3a2502e6;
+    margin: 1px;
+    color: #fff;
+}
+
+
+.controller .show__sections--button {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+}
+
+.show__sections, .activate {
+    display: flex;
+    gap: .3rem;
+    align-items: center;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    padding: .1rem .5rem;
+    background-color: #170f01e6;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+.header p:last-child {
+    text-align: center;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+    padding: .2rem .2rem;
+    font-weight: 700;
+}
+
+input[type='checkbox'] {
+    width: 16px;
+    height: 16px;
+}
+
+.days, .bible_first_column, .bible_second_column, .bible_third_column {
+    display: flex;
+    gap: .3rem;
+    align-items: center;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Read the Bible</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.2.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.2.1/core.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="description" content="A webpage for helping keeping track of bible reading. And for motivate reading the Bible in one year.">
+    <meta name="author" content="Edi Carlos da Silva">
+</head>
+<body>
+    <main>
+        <section class="block">
+            <div class="date">
+                <fieldset>
+                    <label for="dateStarted">Begin Date:</label>
+                    <input type="date" name="dateStarted" id="dateStarted">
+                </fieldset>
+    
+                <fieldset>
+                    <label for="dateOfThisBlock">This Block Begin Date:</label>
+                    <input type="date" name="dateOfThisBlock" id="dateOfThisBlock">
+                </fieldset>
+            </div>
+            <div class="controller">
+                <div class="show__sections">
+                    <label for="show_section">Show Sections</label>
+                    <input type="checkbox" name="show_section" id="show_section">
+                </div>
+                <div class="activate">
+                    <label for="activate">Activate Section</label>
+                    <input type="checkbox" name="activate" id="activate">
+                </div>
+            </div>
+            <div class="header">
+                <p>Day</p>
+                <p>Scripture</p>
+                <p>New Testament</p>
+            </div>
+            <div class="row">
+                <div class="days">
+                    <input type="checkbox" name="checkpoint-1" id="checkpoint-1">
+                    <label for="checkpoint-1">1</label>
+                </div>
+    
+                <div class="first_column">
+                    <label for="checkbox-gen-1">Gen 1</label>
+                    <input type="checkbox" name="checkbox-gen-1" id="checkbox-gen-1">
+                </div>
+    
+                <div class="second_column">
+                    <label for="checkbox-ps-1">Ps 1</label>
+                    <input type="checkbox" name="checkbox-ps-1" id="checkbox-ps-1">
+                </div>
+    
+                <div class="third_column">
+                    <label for="checkbox-mt-1.1-17">Mt 1.1-17</label>
+                    <input type="checkbox" name="checkbox-mt-1.1-17" id="checkbox-mt-1.1-17">
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="py" src="./main.py" config="./pyscript.json"></script>
+</body>
+</html>
+
+
+<!-- https://docs.pyscript.net/2026.2.1/user-guide/dom/ -->
+<!-- Working with classes and styles -->
