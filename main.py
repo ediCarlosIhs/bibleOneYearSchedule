@@ -2,6 +2,7 @@ from pyscript import web, when
 import js
 import json
 from bible import bible_first_column, bible_second_column, bible_third_column
+from datetime import date
 
 def save_initial_data():
 
@@ -118,6 +119,10 @@ def create_sections(id):
     # fieldset for begin date
     saved_date = load_dates()
     fs_start = web.fieldset()
+    if not saved_date or "begin_date" not in saved_date:
+        today = date.today().strftime("%Y-%m-%d")
+        saved_date = {"begin_date": today}
+
     fs_start.append(web.label("Begin Date:", for_="dateStarted"))
     fs_start.append(web.input_(type="date", name="dateStarted", id="dateStarted", value=saved_date["begin_date"], onchange=handle_date_change))
 
