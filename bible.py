@@ -607,14 +607,5 @@ bible_third_column = {
     "7": False, "8": False, "9": False, "10": False, "11": False, "12": False,
     "13": False, "14": False, "15": False, "16": False, "17": False,
     "18": False, "19": False, "20": False, "21": False, "22": False
-  },
-  "mt": {
-    "1.18-2.12": False, "2.13-23": False
-  },
-  "lk": {"1.1-25": False, "1.26-56": False, "1.57-80": False, "2.1-21": False, "2.22-52": False
-    },
-    "jn": {"1.1-18": False},
-    "col": {"1.14-23": False},
-    "phil": {"1.14-23": False},
-    "jn": {"1.14-23": False}
+  }
 }
