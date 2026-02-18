@@ -127,6 +127,10 @@ def create_sections(id):
     fs_start.append(web.input_(type="date", name="dateStarted", id="dateStarted", value=saved_date["begin_date"], onchange=handle_date_change))
 
     # fieldset Actual block begin date
+    saved_date = load_dates()
+    if not saved_date or "block_begin" not in saved_date:
+        today = date.today().strftime("%Y-%m-%d")
+        saved_date = {"block_begin": today}
     fs_block = web.fieldset()
     fs_block.append(web.label("This Block Begin Date:", for_="dateOfThisBlock"))
     fs_block.append(web.input_(type="date", name="dateOfThisBlock", id="dateOfThisBlock", value=saved_date["block_begin"], onchange=handle_date_change))
