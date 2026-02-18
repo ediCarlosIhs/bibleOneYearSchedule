@@ -303,8 +303,8 @@ def lock_first_section():
 
 def main():
 
-    bible = load_bible()
     save_initial_data()
+    bible = load_bible()
 
     create_sections(1)
 
