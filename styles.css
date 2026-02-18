@@ -69,6 +69,10 @@ main {
     font-weight: 700;
 }
 
+.row:nth-child(odd) {
+    background-color: #cececfe6;
+}
+
 input[type='checkbox'] {
     width: 16px;
     height: 16px;
